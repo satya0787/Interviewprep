@@ -1,7 +1,12 @@
 package SeleniumPractice;
 
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
@@ -25,8 +30,24 @@ public class Login {
 		
 		Thread.sleep(3000);
 		
+		driver.switchTo().newWindow(WindowType.TAB);
+		driver.get("http://google.com");
+		
+		driver.switchTo().newWindow(WindowType.WINDOW);
+		driver.get("http://facebook.com");
+		
+		Set<String> windowhandles = driver.getWindowHandles();
+		ArrayList<String> handles = new ArrayList<String>(windowhandles);
+		for(String handl : handles) {
+			System.out.println(handl);
+		}
+		
+		
+		Thread.sleep(3000);
+		
 		driver.quit();
 		
 		
+
 	}
 }
