@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -25,7 +27,11 @@ public class Login {
 		
 		driver.findElement(By.id("fromCity")).sendKeys("hy");
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//li[@id='react-autowhatever-1-section-0-item-12']")).click();
+	WebElement inputbox=	driver.findElement(By.xpath("//li[@id='react-autowhatever-1-section-0-item-12']"));
+	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	
+	js.executeScript("arguments[0].click()", inputbox);
 		//driver.findElement(By.xpath("//*[contains(.,'Hyderabad Begumpet Airport')]")).click();
 		
 		Thread.sleep(3000);
