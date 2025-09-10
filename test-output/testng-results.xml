@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-09T20:01:12 IST" name="Default suite" finished-at="2025-09-09T20:01:28 IST" duration-ms="16119">
+  <suite started-at="2025-09-10T21:18:34 IST" name="Default suite" finished-at="2025-09-10T21:18:48 IST" duration-ms="14704">
     <groups>
     </groups>
-    <test started-at="2025-09-09T20:01:12 IST" name="Default test" finished-at="2025-09-09T20:01:28 IST" duration-ms="16119">
+    <test started-at="2025-09-10T21:18:34 IST" name="Default test" finished-at="2025-09-10T21:18:48 IST" duration-ms="14704">
       <class name="SeleniumPractice.Login">
-        <test-method signature="invokeurl()[pri:0, instance:SeleniumPractice.Login@31368b99]" started-at="2025-09-09T20:01:12 IST" name="invokeurl" finished-at="2025-09-09T20:01:28 IST" duration-ms="16107" status="PASS">
+        <test-method signature="invokeurl()[pri:0, instance:SeleniumPractice.Login@31368b99]" started-at="2025-09-10T21:18:34 IST" name="invokeurl" finished-at="2025-09-10T21:18:48 IST" duration-ms="14688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeurl -->
